@@ -1,0 +1,31 @@
+.wrapper {
+  margin-top: 100px;
+  margin-left: 200px;
+}
+.password1 {
+  margin-top: 20px;
+}
+.password2 {
+  margin-top: 20px;
+  margin-left: 55px;
+}
+.check {
+  margin-left: 300px;
+}
+
+.block1 {
+  position: relative;
+  width: 600px;
+  height: 100px;
+  margin-top: 50px;
+  margin-left: 50px;
+  background-color: rgba(223, 16, 16, 0.788);
+}
+.block2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: rgba(14, 32, 197, 0.884);
+}
