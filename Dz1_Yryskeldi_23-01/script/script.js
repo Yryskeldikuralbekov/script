@@ -1,3 +1,5 @@
+// Первое задание
+
 const email = document.querySelector("#email");
 const password1 = document.querySelector("#password1");
 const password2 = document.querySelector("#password2");
@@ -68,6 +70,8 @@ function showpassword2() {
 }
 showpassword1();
 showpassword2();
+
+// Второе задание
 
 let position = 0;
 

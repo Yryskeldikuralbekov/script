@@ -1,0 +1,43 @@
+.timer {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#hexagon {
+  width: 500px;
+  height: 275px;
+  margin-top: 150px;
+  margin-left: 100px;
+  background: red;
+  position: relative;
+}
+#hexagon:before {
+  content: "";
+  position: absolute;
+  top: -125px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  border-bottom: 125px solid red;
+}
+#hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -125px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  border-top: 125px solid red;
+}
+
+.block3 {
+  position: absolute;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(14, 32, 197, 0.884);
+}
