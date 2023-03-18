@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 // Первое задание
+=======
+
+// Первая
+>>>>>>> c802f577f8e13a7912cd7ff86329348bd753fdd6
 
 const email = document.querySelector("#email");
 const password1 = document.querySelector("#password1");
@@ -71,7 +76,12 @@ function showpassword2() {
 showpassword1();
 showpassword2();
 
+<<<<<<< HEAD
 // Второе задание
+=======
+
+// Вторая
+>>>>>>> c802f577f8e13a7912cd7ff86329348bd753fdd6
 
 let position = 0;
 
