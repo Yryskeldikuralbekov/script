@@ -22,11 +22,14 @@ btn.addEventListener("click", () => {
       p.style.color = "#121212";
       p1.style.color = "#121212";
       p2.style.color = "#121212";
+      p.style.fontSize = "20px";
+      p1.style.fontSize = "20px";
+      p2.style.fontSize = "20px";
       img.style.width = "160px";
       img.style.height = "160px";
       img.style.marginTop = "10px";
       img.style.marginLeft = "65px";
-      block.style.height = "340px";
+      block.style.height = "450px";
       block.style.width = "300px";
       block.style.borderRadius = "10px";
 
@@ -35,9 +38,9 @@ btn.addEventListener("click", () => {
       block.style.marginLeft = "45px";
 
       img_inner.innerHTML = img.setAttribute("src", item.img);
-      p.innerHTML = "Name:" + " " + item.title;
-      p1.innerHTML = "Price:" + " " + item.price;
-      p2.innerHTML = "Description:" + " " + item.description;
+      p.innerHTML = "Название:" + " " + item.title;
+      p1.innerHTML = "Цена:" + " " + item.price;
+      p2.innerHTML = "Описание:" + " " + item.description;
 
       block.append(img);
       block.append(p);
