@@ -48,5 +48,47 @@ btn.addEventListener("click", () => {
       block.append(p2);
       content.append(block);
     });
+    const modal2 = document.querySelector(".modal2");
+    const modal__message = document.querySelector(".modal__message");
+    const p4 = document.createElement("p");
+    const img2 = document.createElement("img");
+    const img3 = document.createElement("img");
+    const img__inner = "";
+    if (200 <= request.status || request.status <= 399) {
+      img2.style.width = "100px";
+      img2.style.height = "100px";
+      img2.style.marginTop = "20px";
+      img3.style.width = "100px";
+      img3.style.height = "100px";
+      img3.style.marginTop = "20px";
+      p4.style.fontSize = "25px";
+      modal2.classList.add("show");
+      modal2.classList.remove("hide");
+      p4.innerHTML = "Успешно! Все данные получены!";
+      img__inner.innerHTML = img2.setAttribute("src", "./img/success.png");
+      img__inner.innerHTML = img3.setAttribute("src", "./img/success2.png");
+
+      modal__message.append(p4);
+      modal__message.append(img2);
+      modal__message.append(img3);
+    } else if (400 <= request.status || request.status <= 599) {
+      modal2.classList.add("show");
+      modal2.classList.remove("hide");
+      p4.innerHTML = "Ошибка! Данные потеряны.";
+      img__inner.innerHTML = img2.setAttribute("src", "./img/unsuccess.png");
+      modal__message.append(p4);
+      modal__message.append(img2);
+    }
+    const modalCloseBtn1 = document.querySelector(".modal__close_1");
+    const closeModal = (event) => {
+      const target = event.target;
+      if (target === modal2 || target === modalCloseBtn1) {
+        modal2.classList.add("hide");
+        modal2.classList.remove("show");
+        document.body.style.overflow = "";
+      }
+    };
+    modalCloseBtn1.addEventListener("click", closeModal);
+    modal2.addEventListener("click", closeModal);
   });
 });
